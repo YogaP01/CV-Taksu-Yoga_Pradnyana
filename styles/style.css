@@ -1,0 +1,846 @@
+/* @font-face {
+    font-family:'Prayuth Slim' ;
+    src: url(../public/font.ttf);
+} */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    font-family:'Montserrat' ;
+    /* font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif; */
+}
+body{
+    background-color: #131420;
+}
+.container{
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+  /* ..........navbar.......... */
+
+.header{
+    background:#131420;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 7%;
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    z-index: 1000;
+}
+.logo{
+    color:#FFF;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.logo span{
+    color: #1EA75A;
+}
+.header .lingkaran{
+    background-image: url(../public/Frame2.svg);
+    background-size: cover;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 14rem;
+    top: 21px;
+    z-index: -1;
+}
+.navbar a{
+    margin: 0 1.5rem;
+    font-size:17px;
+    color: #ECECEC;
+}
+.navbar a:hover{
+    font-weight: 600;
+    color: #1EA75A;
+    border-bottom: .2rem solid #FFF;
+    font-style: italic;
+    padding-bottom: .5rem;
+}
+.navbar .contact-a:hover{
+    color: #000;
+}
+.navbar .contact-a{
+    background-color: #1EA75A;
+    border-radius: 22px;
+    padding: 7px 20px;
+}
+/* ..........banner.......... */
+
+.banner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.banner .bulet{
+    width:350px ;
+    height:540px ;
+    left: 10em;
+    top: 11em;
+    color: #151625;
+    position: absolute;
+    border: 17px solid;
+    border-radius:1400px ;
+    z-index: -1;
+}
+.banner .container{
+    display: flex;
+    height: 100vh;
+}
+.kiri {
+    margin-top: 20%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+.kiri .atas{
+    font-size: 30px;
+    color: #fff;
+    margin-left: .5em;
+    font-weight: 800;
+}
+.kiri .text{
+    font-size: 38px;
+    color: #1EA75A;
+    margin: 30px 0;
+}
+.kiri .description{
+   font-size: 18px; 
+   color: #ECECEC;
+   line-height: 30px;
+ 
+}
+.kiri .cta{
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 30px 0;
+    background-color: #1EA75A;
+    border: 1px solid #1EA75A;
+    cursor: pointer;
+    color: #000;
+    font-size: 19;
+    font-weight: 600;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-right: 50px;
+}
+/* .kiri .cta i{
+    color: #000;
+    font-size: 19px;
+    margin-left: 1em;
+    transform: translateY(2.5px);
+} */
+.kiri .cta:hover {
+    background-color: #13131a;
+    color: #FFF;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 25px;
+    border: 1px solid #fff;
+    border-bottom-right-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* .kiri .cta:hover i{
+    color: #FFF !important;
+    font-weight: 600;
+    font-size: 20;
+} */
+.kiri .btn{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+/* .kiri .img {
+    background-image: url(../public/github.png);
+    background-color: #FFF;
+    padding: 21px;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    margin:10px 15px ;
+    background-size: cover;
+    border-radius: 50%;
+}
+.kiri .img:nth-child(2){
+    background-image: url(../public/instagram.png);
+}
+.kiri .img:nth-child(3){
+    background-image: url(../public/whatsapp.png);
+} */
+
+.warp{
+    height: auto;
+    width: fit-content;
+
+}
+.kanan {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img-kanan{
+    background-image: url(../public/fotoo.png);
+    width: 450px;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    margin-top: 120px;
+}
+.frame-kanan{
+    background-image: url(../public/Frame.svg);
+    height: 300px;
+    width: 180px;
+    top: 7em;
+    right: 0;
+    transform: translateX(4em) translateY(1em);
+    opacity: .7;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+/* ..........about.......... */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+}
+/* .kiri-about img{
+    width: 100%;
+    height: 100%;
+} */
+.kiri-about{
+    width: 40%;
+    height: 85%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.kiri-img{
+    background-image:url(../public/fotoo.png);
+    width: 450px;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+}
+.content-about {
+    width: 40%;
+    height: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+} 
+.about .row{
+    display: flex;
+    align-items: center;
+    /* background:#fff; */
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    /* border-radius: 28px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+
+}
+.row .content{
+    padding: 2rem;
+}
+.content-about h3{ 
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.content-about p{
+    color: #fff;
+    font-size: 15px;
+    opacity: 0.7;
+    text-align: justify;
+    line-height: 1.8rem;
+    padding-bottom: 40px;
+}
+.about-cta{
+    display: inline-block;
+    padding: 15px 40px;
+    width: 180px;
+    height: 50px;
+    background-color: #1EA75A;
+    border: 1px solid #1EA75A;
+    cursor: pointer;
+    color: #000;
+    font-size: 19;
+    font-weight: 600;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.about-cta:hover {
+    background-color: #13131a;
+    color: #FFF;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 25px;
+    border: 1px solid #fff;
+    border-bottom-right-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ..........Resume.......... */
+
+.edukasi  {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box-container{
+    width: 70%;
+    height: 80vh;
+    background-color: #191A2A;
+    border-radius: 20px;
+}
+.box-container .text{
+    color: #FFF;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
+}
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.box-container .edu-kiri{
+    width: 50%;
+    height: 89%;
+}
+.box-container .edu-kanan{
+    width: 50%;
+    height: 89%;
+}
+.box-container .edu-box{
+    width: 100%;
+    height: 33.3%;   
+    display: flex;
+    /* padding-top: 2em; */
+}
+.box-container .edu-img{
+    background-image:url(../public/classroom.png) ;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    transform: translateX(1.7em) translateY(2.1em);
+}
+.box-container .img-1{
+    background-image:url(../public/school.png) ;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    transform: translateX(1.7em) translateY(1.6em);
+}
+.box-container .img-2{
+    background-image:url(../public/schooll.png) ;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    transform: translateX(1.7em) translateY(1.7em);
+}
+.box-container .img-1-2{
+    background-image:url(../public/files.png) ;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    transform: translateX(2.2em) translateY(2em);
+}
+.box-container .img-2-2{
+    background-image:url(../public/filess.png) ;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    transform: translateX(2.2em) translateY(2em);
+}
+.box-container .img-3-2{
+    background-image:url(../public/bootstrap.png) ;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    transform: translateX(2em) translateY(1.7em);
+}
+
+.box-container .edu-content {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-container .bg{
+    background-color: #131420;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+.box-container .bg:hover {
+    background-color: #1EA75A;
+}
+.box-container .text-box{
+    display: flex;
+    flex-direction: column;
+}
+.box-container .edu-title{
+    width: 60%;
+    height: auto;
+    color: #fff;
+    text-align: left;
+    margin-left: 15px;
+    padding-top: 2em;
+}
+.box-container .text-edu{
+    width: 255px;
+    color: #FFF;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: justify;
+}
+
+
+/* ..........Form.......... */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+.form .row-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 3em;
+
+}
+.form .container-form{
+    background: #000;
+    width: 90%;
+    border-radius: 9px;
+    height: 80vh;
+}
+.form .form-kanan{
+    width: 50%;
+    height: 100%;
+}
+.form .form-kiri{
+    width: 50%;
+    height: 100%;
+}
+.form  .row-form .map{
+    flex: 1 1 45rem;
+    height:85%;
+    width: 85%;
+    margin-left: 4em;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.form h3{
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+}
+.form .input-box{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    background: #fff;
+    border: #FFF;
+    border-radius: 8px;
+}
+.form .input-box input{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #000;
+    text-transform: none;
+    background: none;
+}
+.form .input-box span{
+    color: #151625;
+    font-size: 1.7rem;
+    padding-left: 2rem;
+}
+.form .form-cta{
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 20px;
+    margin-left: 15rem;
+    width: 180px;
+    height: 50px;
+    background-color: #1EA75A;
+    border: 1px solid #1EA75A;
+    cursor: pointer;
+    color: #000;
+    font-size: 19;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+/* ..........Footer.......... */
+
+footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding-top: 70px;
+    background: #191A2A;
+    color: #fff;
+    overflow-x: hidden;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px;
+    line-height: 28px;
+    font-size: 16px;
+}
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.social li{
+    margin: 0 10px;
+}
+.social a{
+    color: #fff;
+}
+.social a i {
+    font-size: 2.1rem;
+}
+.footer-bottom{
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+@media (max-width:1157px){
+    section{
+        padding: 2rem;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    .logo{
+        display: none;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lingkaran{
+        display: none;
+    }
+    .kanan .img-kanan{
+        width: 70%;
+        height: 60%;
+        transform: translateY(-2rem);
+    }
+    .banner .bulet{
+        display: none;
+    }
+    .tess .text{
+        font-size: 30px;
+    }
+    /* about */
+    .about{
+        transform: translateY(-6em);
+    }
+    .content-about{
+        width: 55%;
+        transform: translateX(3em);
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    /* resume */
+    .box-container{
+        width: 90%;
+    }  
+    .edu-kiri .edu-img{
+        width: 60px;
+        height: 60px;
+        transform: translateX(0px) translateY(0px);
+    }
+    .edu-content .bg{
+        width: 110px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .edu-kanan .edu-img{
+        width: 60px;
+        height: 60px;
+        transform: translateX(0px) translateY(0px);
+    }
+    /* contact */
+    .form-cta{
+        transform: translateX(-4em);
+    }
+}
+
+@media (max-width:768px){
+    .header .navbar a{
+        font-size: 12px;
+    }
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .kiri{
+        width: 100%;
+        height: auto;
+    }
+
+    .banner .atas{
+        font-size: 2em;
+        transform: translateX(5em) translateY(-4em);
+
+    }
+    .banner .text{
+        font-size: 1.6em;
+        transform: translateX(3em) translateY(-4em);
+        
+    }
+    .banner .description{
+        font-size: 1em;
+        transform: translateX(4em) translateY(-6.8em);
+    }
+    .btn .cta {
+        padding: 10px 12px;
+        transform: translateX(9em) translateY(-6.8em);
+    }
+
+   .kanan .img-kanan{
+        display: none;
+    }
+    .frame-kanan{
+        display: none;
+    }
+    
+    /* about Me */
+    .about{
+        height: 80vh;
+        width: 98%;
+    }
+    .row{
+        transform: translateY(-7em);
+    }
+
+   .kiri-about  .kiri-img{
+    width: 99%;
+    height: 80%;
+    }
+
+    .content-about h3{
+        font-size: 2em;
+    }
+    /* .content-about p span{
+        display: none;
+    } */
+    .about-cta{
+        padding: 12px 12px;
+        width: 120px;
+        height: 40px;
+    }
+    /* resume */
+    .edukasi{
+        height: 100%;
+    }
+    .box-container{
+        height: 100%;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10em;
+    }
+    .edu-kiri{
+        width: 100%;
+        padding-bottom: 3em;
+    }
+    .edu-kanan{
+        width: 100%;
+    }
+    /* form */
+    .map{
+        display: none;
+    }
+    .form-kiri{
+        display: none;
+    }
+    .form-kanan{
+        width: 100%;
+        height: auto;
+    }
+    .row-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .input-box{
+        width: 100%;
+        transform: translateX(-2em);
+    }
+    .input-box input{
+        width: 90%;
+    }
+   .form .form-cta{
+        padding: 2px 2px;
+        width: 160px;
+        height: 40px;
+        transform: translateX(-10em) translateY(-2em);
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .home{
+        padding: 12rem;
+    }
+    .form .form-cta{
+        padding: 2px 2px;
+        width: 160px;
+        height: 40px;
+        transform: translateX(-6em) translateY(2em);
+    }
+    .text-box{
+        width: 50%;
+        transform: translateX(-4em);
+    }
+    .edu-title{
+        font-size: 10px;
+    }
+    .text-edu p{
+       width: 77%; 
+    }
+    .text-edu span{
+        display: none;
+    }
+    .edu-content{
+        transform: translateX(-6em);
+    }
+    /* banner */
+    .kanan{
+        display:  none;
+        
+    }
+    .kiri{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner .atas{
+        font-size: 4em;
+        transform: translateX(1.8em) translateY(-4em);
+    }
+    .banner .text{
+        font-size: 2.5em;
+        transform:  translateY(-6em);
+    }
+    .banner .description{
+        font-size: 1.8em;
+        transform: translateX(-2em) translateY(-7em);
+    }
+    .btn .cta {
+        padding: 12px 30px;
+        transform: translateX(6em) translateY(-12em);
+    }
+}
